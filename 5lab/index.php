@@ -269,8 +269,8 @@ else {
       setcookie('check_error', '', 100000);
     }
     
-	$user = 'u54416';
-	$pass = '1878126';	
+	$user = 'u52931';
+	$pass = '6829349';	
     $db = new PDO('mysql:host=localhost;dbname=u54416', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     if (!empty($_COOKIE[session_name()]) && !empty($_SESSION['login']) and !$errors) {
       $id=$_SESSION['uid'];
