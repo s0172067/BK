@@ -271,7 +271,7 @@ else {
     
 	$user = 'u52931';
 	$pass = '6829349';	
-    $db = new PDO('mysql:host=localhost;dbname=u54416', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+    $db = new PDO('mysql:host=localhost;dbname=u52931', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     if (!empty($_COOKIE[session_name()]) && !empty($_SESSION['login']) and !$errors) {
       $id=$_SESSION['uid'];
       $upd=$db->prepare("UPDATE form SET name=:name, email=:email, year=:byear, pol=:pol, limbs=:limbs, bio=:bio WHERE id=:id");
