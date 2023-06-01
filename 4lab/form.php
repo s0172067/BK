@@ -718,6 +718,7 @@ if (!empty($messages)) {
     
     <form action="index.php" method="POST">
             <div class="pas <?php if ($errors['name']) {print 'error';} ?>" >
+		    <br />
                 Имя:
                 <input name="name" placeholder="Введите имя" 
                  value="<?php print $values['name']; ?>" />
@@ -725,6 +726,7 @@ if (!empty($messages)) {
             </div>
 
             <div class="pas <?php if ($errors['email']) {print 'error';} ?>">
+		    <br />
                 E-mail:
                 <input name="email" type="email" placeholder="Введите почту" value="<?php print $values['email']; ?>"
 	            >
@@ -732,6 +734,7 @@ if (!empty($messages)) {
             </div>
 
             <div class="pas" >
+		    <br />
                 Год рождения:
                 <select id="yearB" name="year" >
                 <?php
@@ -749,6 +752,7 @@ if (!empty($messages)) {
             </div>
 
             <div class="pas <?php if ($errors['radio-1']) {print 'error';} ?>"> 
+		    <br />
                 Пол:<br>
                 <input type="radio" name="radio-1" value="male"  <?php if($values['radio-1']=="male") {print 'checked';} ?>/>
                 Мужской
@@ -760,6 +764,7 @@ if (!empty($messages)) {
 
 
             <div class="pas <?php if ($errors['radio-2']) {print 'error';} ?>">
+		    <br />
                 Сколько конечностей?<br>
                     <input type="radio" name="radio-2" value="4" <?php if($values['radio-2']=="4") {print 'checked';} ?>/>
                     4
@@ -777,6 +782,7 @@ if (!empty($messages)) {
 
 
             <div class="pas <?php if ($errors['super']) {print 'error';} ?>">
+		    <br />
                 Сверхспособности
 		    <br />
                 
@@ -790,6 +796,7 @@ if (!empty($messages)) {
             </div>
 
             <div class="pas <?php if ($errors['bio']) {print 'error';} ?>">
+		    <br />
                 Биография
 		    <br />
                 <textarea name="bio"><?php print $values['bio']; ?></textarea>
