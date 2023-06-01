@@ -721,12 +721,14 @@ if (!empty($messages)) {
                 Имя:
                 <input name="name" placeholder="Введите имя" 
                  value="<?php print $values['name']; ?>" />
+		    <br />
             </div>
 
             <div class="pas <?php if ($errors['email']) {print 'error';} ?>">
                 E-mail:
                 <input name="email" type="email" placeholder="Введите почту" value="<?php print $values['email']; ?>"
 	            >
+		    <br />
             </div>
 
             <div class="pas" >
@@ -743,6 +745,7 @@ if (!empty($messages)) {
           }
           ?>
           </select>
+		    <br />
             </div>
 
             <div class="pas <?php if ($errors['radio-1']) {print 'error';} ?>"> 
@@ -751,6 +754,7 @@ if (!empty($messages)) {
                 Мужской
                 <input type="radio" name="radio-1" value="female" <?php if($values['radio-1']=="female") {print 'checked';} ?>/>
                 Женский
+		    <br />
             </div>
 
 
@@ -768,11 +772,13 @@ if (!empty($messages)) {
 
                     <input type="radio" name="radio-2" value="1" <?php if($values['radio-2']=="1") {print 'checked';} ?>/>
                     1
+		    <br />
             </div>
 
 
             <div class="pas <?php if ($errors['super']) {print 'error';} ?>">
-                Сверхспособности?
+                Сверхспособности
+		    <br />
                 
                     <select name="super[]" multiple="multiple">
                     <?php if ($errors['super']) {print 'class="error"';} ?> >
@@ -780,12 +786,14 @@ if (!empty($messages)) {
                     <option value="walk" <?php if($values['walk']==1){print 'selected';} ?>>прохождение сквозь стены</option>
                     <option value="fly" <?php if($values['fly']==1){print 'selected';} ?>>левитация</option>
                     </select>
-                
+                <br />
             </div>
 
             <div class="pas <?php if ($errors['bio']) {print 'error';} ?>">
-                Биография?
+                Биография
+		    <br />
                 <textarea name="bio"><?php print $values['bio']; ?></textarea>
+		    <br />
             </div>
 
             <div class="pas <?php if ($errors['check-1']) {print 'error';} ?> ">
