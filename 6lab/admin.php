@@ -1,9 +1,9 @@
 <?php
 
 if($_SERVER['REQUEST_METHOD']=='GET'){
-  $user = 'u52931';
-  $pass = '6829349';
-  $db = new PDO('mysql:host=localhost;dbname=u52931', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+  $user = 'u52935';
+  $pass = '9788678';
+  $db = new PDO('mysql:host=localhost;dbname=u52935', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
   $pass_hash=array();
   try{
     $get=$db->prepare("select pass from admin where user=?");
